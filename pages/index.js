@@ -20,7 +20,7 @@ export default function Home() {
         <link  rel="shortcut icon" href="favicon.png" />
       </Head>
 
-      <main className='bg-zinc-200 pb-10 px-10 md:px-20 lg:px-40 dark:bg-gray-900'>
+      <main className='bg-zinc-200 px-10 pb-1 mx-auto md:px-20 lg:px-40 dark:bg-gray-900'>
         {/* Section 1 */}
         <section className='min-h-screen font-burtons'>
 
@@ -41,7 +41,7 @@ export default function Home() {
           {/* Navigations */}
 
           {/* Profile */}
-          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 overflow-hidden'>
+          <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 overflow-hidden'>
             <Image src={Profile} layout="fill" objectFit='cover' />
           </div>
           {/* Profile */}
