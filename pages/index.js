@@ -20,7 +20,7 @@ export default function Home() {
         <link  rel="shortcut icon" href="favicon.png" />
       </Head>
 
-      <main className='bg-zinc-200 px-10 pb-1 mx-auto md:px-20 lg:px-40 dark:bg-gray-900'>
+      <main className='bg-zinc-200 px-2 pb-1 mx-auto md:px-20 lg:px-40 dark:bg-gray-900'>
         {/* Section 1 */}
         <section className='min-h-screen font-burtons'>
 
