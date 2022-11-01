@@ -2,7 +2,6 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {SiStreamlit,SiNetlify} from 'react-icons/si' 
 import {AiFillLinkedin,AiFillInstagram,AiFillGithub} from 'react-icons/ai'
-import Image from "next/image"
 import Profile from "../public/Profile.png"
 import { useState } from 'react'
 
@@ -74,7 +73,9 @@ export default function Home() {
           <div class="font-cascadia p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10">
           {/* Card 1 */}
           <div class="rounded-xl overflow-hidden shadow-xl shadow-teal-600/60 dark:bg-slate-100">
-            <img class="w-full" src="/project-1.png" alt="Fire_image"/>
+            <picture>
+              <img class="w-full" src="/project-1.png" alt="Fire_image"/>
+            </picture>
             <div class="px-6 py-4">
               <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Fire_Detection_YoloV5' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Fire Detection</a></div>
               <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
