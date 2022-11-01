@@ -79,7 +79,7 @@ export default function Home() {
             </picture>
             <div class="px-6 py-4">
               <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Fire_Detection_YoloV5' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Fire Detection</a></div>
-              <div class="text-gray-700 p-3 leading-7 max-w-lg mx-auto">
+              <div class="text-gray-700 p-3 leading-7 justify-center max-w-lg mx-auto">
                 <ul class="list-disc">
                   <li>
                     In this project I created my own dataset with 300 images and labels.
@@ -116,7 +116,7 @@ export default function Home() {
             </picture>
             <div class="px-6 py-4">
               <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Nextjs-Porfolio' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Portfolio</a></div>
-              <div class="text-gray-700 p-3 leading-7 max-w-lg mx-auto">
+              <div class="text-gray-700 p-3 leading-7 justify-center max-w-lg mx-auto">
                 <ul class="list-disc">
                   <li>
                     Learned about Nextjs and Tailwind css.
@@ -142,7 +142,7 @@ export default function Home() {
             </picture>
             <div class="px-6 py-4">
               <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/ChatBot' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>ChatBot</a></div>
-              <div class="text-gray-700 p-3 leading-7 max-w-lg mx-auto">
+              <div class="text-gray-700 p-3 leading-7 justify-center max-w-lg mx-auto">
                 <ul class="list-disc">
                   <li>
                     A simple chatbot for banking FAQ answers.
@@ -174,7 +174,7 @@ export default function Home() {
             </picture>
             <div class="px-6 py-4">
               <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/GiphySearch' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>GiphySearch</a></div>
-              <div class="text-gray-700 p-3 leading-7 max-w-lg mx-auto">
+              <div class="text-gray-700 p-3 leading-7 justify-center max-w-lg mx-auto">
                 <ul class="list-disc">
                   <li>
                     A simple website which search for gif images.
