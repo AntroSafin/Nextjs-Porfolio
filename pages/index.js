@@ -2,6 +2,7 @@ import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
 import {SiStreamlit,SiNetlify} from 'react-icons/si' 
 import {AiFillLinkedin,AiFillInstagram,AiFillGithub} from 'react-icons/ai'
+import Image from 'next/image'
 import Profile from "../public/Profile.png"
 import { useState } from 'react'
 
@@ -110,7 +111,9 @@ export default function Home() {
 
           {/* Card 2 */}
           <div class="rounded-xl overflow-hidden shadow-xl shadow-teal-600/60 dark:bg-slate-100">
+            <picture>
             <img class="w-full" src="/project-3.jpg" alt="Portfolio"/>
+            </picture>
             <div class="px-6 py-4">
               <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Nextjs-Porfolio' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Portfolio</a></div>
               <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
@@ -134,7 +137,9 @@ export default function Home() {
 
           {/* Card 3 */}
           <div class="rounded-xl overflow-hidden shadow-xl shadow-teal-600/60 dark:bg-slate-100">
+            <picture>
             <img class="w-full" src="/project-2.jpg" alt="ChatBot"/>
+            </picture>
             <div class="px-6 py-4">
               <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/ChatBot' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>ChatBot</a></div>
               <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
@@ -164,7 +169,9 @@ export default function Home() {
 
           {/* Card 4 */}
           <div class="rounded-xl overflow-hidden shadow-xl shadow-teal-600/60 dark:bg-slate-100">
+            <picture>
             <img class="w-full" src="/project-4.png" alt="Giphy"/>
+            </picture>
             <div class="px-6 py-4">
               <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/GiphySearch' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>GiphySearch</a></div>
               <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
