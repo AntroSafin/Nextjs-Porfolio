@@ -1,11 +1,9 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
+import {SiStreamlit,SiNetlify} from 'react-icons/si' 
 import {AiFillLinkedin,AiFillInstagram,AiFillGithub} from 'react-icons/ai'
 import Image from "next/image"
 import Profile from "../public/Profile.png"
-import project_1 from "../public/project-1.jpg"
-import project_2 from "../public/project-2.png"
-import project_3 from "../public/project-3.jpg"
 import { useState } from 'react'
 
 
@@ -20,7 +18,7 @@ export default function Home() {
         <link  rel="shortcut icon" href="favicon.png" />
       </Head>
 
-      <main className='bg-zinc-200 px-2 pb-1 mx-auto md:px-20 lg:px-40 dark:bg-gray-900'>
+      <main className='bg-zinc-200 px-2 pb-1 mx-auto md:px-10 lg:px-20 dark:bg-gray-900'>
         {/* Section 1 */}
         <section className='min-h-screen font-burtons'>
 
@@ -34,7 +32,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-xl dark:text-white'/>
               </li>
               <li>
-                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="#">Resume</a>
+                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href="https://drive.google.com/file/d/1d-FiDpasYcNEtGviFNJYgsF2IHVrqfqa">Resume</a>
               </li>
             </ul>
           </nav>
@@ -73,59 +71,121 @@ export default function Home() {
             <h3 className='text-4xl font-medium dark:text-white'>Projects</h3>
           </div>
 
-          <div className='font-cascadia'>
-            {/* Project 1 */}
-            <div className='text-center shadow-xl shadow-teal-600/60 p-10 rounded-xl my-10 dark:bg-white'>
-              <Image src={project_1} width={200} height={200} />
-              <h3 className='text-xl font-medium pt-8 pb-4'><a href='https://github.com/AntroSafin/GiphySearch' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>AirCnc_FrontEnd</a></h3>
-              <p className='py-2'>
-                This is the Frontend design of the dog rent website created with the guide given by onemonth learning site.
-              </p>
-              <h4 className='py-4 text-teal-600'>Tools and Languages Used:</h4>
-              <p className='text-gray-800 py-1'>Html</p>
-              <p className='text-gray-800 py-1'>Css</p>
+          <div class="font-cascadia p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10">
+          {/* Card 1 */}
+          <div class="rounded-xl overflow-hidden shadow-xl shadow-teal-600/60 dark:bg-slate-100">
+            <img class="w-full" src="/project-1.png" alt="Fire_image"/>
+            <div class="px-6 py-4">
+              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Fire_Detection_YoloV5' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Fire Detection</a></div>
+              <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
+                <ul class="list-disc">
+                  <li>
+                    In this project I created my own dataset with 300 images and labels.
+                  </li>
+                  <br/>
+                  <li>
+                    Trained the model with my dataset and used custom weights in the project.
+                  </li>
+                  <br/>
+                  <li>
+                    Created the streamlit app with image,video and live detection options.
+                  </li>
+                  <br/>
+                  <li>
+                    Used Pytorch hub for loading my custom weights.
+                  </li>
+                </ul>
+              </div>
+              <div className='text-5xl py-3 flex justify-center text-teal-600'><a href="https://firedetection.streamlitapp.com/" target="_blank"><SiStreamlit /></a></div>
             </div>
-            {/* Project 1 */}
-
-            {/* Project 2 */}
-            <div className='text-center shadow-xl shadow-teal-600/60 p-10 rounded-xl my-10 dark:bg-white'>
-              <Image src={project_2} width={200} height={200} />
-              <h3 className='text-xl font-medium pt-8 pb-4'><a href='https://github.com/AntroSafin/GiphySearch' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>GiphySearch</a></h3>
-              <p className='py-2'>
-                A simple Website which search for gif images.
-              </p>
-              <p className='py-2'>
-                I used the Giphy API for getting gif from the Giphy Site.
-              </p>
-              <h4 className='py-4 text-teal-600'>Tools and Languages Used:</h4>
-              <p className='text-gray-800 py-1'>Html</p>
-              <p className='text-gray-800 py-1'>Css</p>
-              <p className='text-gray-800 py-1'>JavaScript</p>
+            <div class="px-6 pt-4 pb-2 max-w-lg text-center mx-auto">
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Python</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Streamlit</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Opencv</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Pytorch</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">YoloV5</span>
             </div>
-            {/* Project 2 */}
-
-            {/* Project 3 */}
-            <div className='text-center shadow-xl shadow-teal-600/60 p-10 rounded-xl my-10 dark:bg-white'>
-              <Image src={project_3} width={200} height={200} />
-              <h3 className='text-xl font-medium pt-8 pb-4'><a href='https://github.com/AntroSafin/GiphySearch' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>ChatBot</a></h3>
-              <p className='py-2'>
-                Simple ChatBot for Banking FAQ answers.
-              </p>
-              <p className='py-2'>
-                We used AIML which is the extension of XML for this project.
-              </p>
-              <p className='py-2'>
-                The language we learnt and used are JSP and AIML.
-              </p>
-              <h4 className='py-4 text-teal-600'>Tools and Languages Used:</h4>
-              <p className='text-gray-800 py-1'>JSP</p>
-              <p className='text-gray-800 py-1'>Java</p>
-              <p className='text-gray-800 py-1'>AIML</p>
-              <p className='text-gray-800 py-1'>Eclipse</p>
-            </div>
-            {/* Project 3 */}
-
           </div>
+
+          {/* Card 2 */}
+          <div class="rounded-xl overflow-hidden shadow-xl shadow-teal-600/60 dark:bg-slate-100">
+            <img class="w-full" src="/project-3.jpg" alt="Portfolio"/>
+            <div class="px-6 py-4">
+              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Nextjs-Porfolio' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Portfolio</a></div>
+              <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
+                <ul class="list-disc">
+                  <li>
+                    Learned about Nextjs and Tailwind css.
+                  </li>
+                  <br/>
+                  <li>
+                    Created my own responsive Portfolio website.
+                  </li>
+                </ul>
+              </div>
+              <div className='text-5xl py-3 flex justify-center text-teal-600'><a href="https://antrosafin.netlify.app/" target="_blank"><SiNetlify /></a></div>
+            </div>
+            <div class="px-6 pt-4 pb-2 text-center max-w-lg mx-auto">
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Nextjs</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Tailwind Css</span>
+            </div>
+          </div>
+
+          {/* Card 3 */}
+          <div class="rounded-xl overflow-hidden shadow-xl shadow-teal-600/60 dark:bg-slate-100">
+            <img class="w-full" src="/project-2.jpg" alt="ChatBot"/>
+            <div class="px-6 py-4">
+              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/ChatBot' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>ChatBot</a></div>
+              <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
+                <ul class="list-disc">
+                  <li>
+                    A simple chatbot for banking FAQ answers.
+                  </li>
+                  <br/>
+                  <li>
+                    We used AIML which is an extension of XML for this project.
+                  </li>
+                  <br/>
+                  <li>
+                    Our team won the first prize in our usecase in Internal Hackathon conducted by our college.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="px-6 pt-4 pb-2 text-center max-w-lg mx-auto">
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">AIML</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Java</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Html</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Css</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JSP</span>
+            </div>
+          </div>
+
+          {/* Card 4 */}
+          <div class="rounded-xl overflow-hidden shadow-xl shadow-teal-600/60 dark:bg-slate-100">
+            <img class="w-full" src="/project-4.png" alt="Giphy"/>
+            <div class="px-6 py-4">
+              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/GiphySearch' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>GiphySearch</a></div>
+              <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
+                <ul class="list-disc">
+                  <li>
+                    A simple website which search for gif images.
+                  </li>
+                  <br/>
+                  <li>
+                    I used Giphy API for getting gif images from the Giphy Site.
+                  </li>
+                </ul>
+              </div>
+              <div className='text-5xl py-3 flex justify-center text-teal-600'><a href="https://simplegiphy.netlify.app/" target="_blank"><SiNetlify /></a></div>
+            </div>
+            <div class="px-6 pt-4 pb-2 text-center max-w-lg mx-auto">
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Html</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Css</span>
+              <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">JavaScript</span>
+            </div>
+          </div>
+        </div>
         </section>
         {/* Section 2 */}
       </main>
