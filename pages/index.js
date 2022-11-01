@@ -78,7 +78,7 @@ export default function Home() {
               <img class="w-full" src="/project-1.png" alt="Fire_image"/>
             </picture>
             <div class="px-6 py-4">
-              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Fire_Detection_YoloV5' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Fire Detection</a></div>
+              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Fire_Detection_YoloV5' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Fire Detection</a></div>
               <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
                 <ul class="list-disc">
                   <li>
@@ -98,7 +98,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className='text-5xl py-3 flex justify-center text-teal-600'><a href="https://firedetection.streamlitapp.com/" target="_blank"><SiStreamlit /></a></div>
+              <div className='text-5xl py-3 flex justify-center text-teal-600'><a href="https://firedetection.streamlitapp.com/"><SiStreamlit /></a></div>
             </div>
             <div class="px-6 pt-4 pb-2 max-w-lg text-center mx-auto">
               <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Python</span>
@@ -115,7 +115,7 @@ export default function Home() {
             <img class="w-full" src="/project-3.jpg" alt="Portfolio"/>
             </picture>
             <div class="px-6 py-4">
-              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Nextjs-Porfolio' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Portfolio</a></div>
+              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/Nextjs-Porfolio' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>Portfolio</a></div>
               <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
                 <ul class="list-disc">
                   <li>
@@ -127,7 +127,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className='text-5xl py-3 flex justify-center text-teal-600'><a href="https://antrosafin.netlify.app/" target="_blank"><SiNetlify /></a></div>
+              <div className='text-5xl py-3 flex justify-center text-teal-600'><a href="https://antrosafin.netlify.app/"><SiNetlify /></a></div>
             </div>
             <div class="px-6 pt-4 pb-2 text-center max-w-lg mx-auto">
               <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Nextjs</span>
@@ -141,7 +141,7 @@ export default function Home() {
             <img class="w-full" src="/project-2.jpg" alt="ChatBot"/>
             </picture>
             <div class="px-6 py-4">
-              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/ChatBot' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>ChatBot</a></div>
+              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/ChatBot' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>ChatBot</a></div>
               <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
                 <ul class="list-disc">
                   <li>
@@ -173,7 +173,7 @@ export default function Home() {
             <img class="w-full" src="/project-4.png" alt="Giphy"/>
             </picture>
             <div class="px-6 py-4">
-              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/GiphySearch' target="_blank" className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>GiphySearch</a></div>
+              <div class="p-2 text-lg text-center"><a href='https://github.com/AntroSafin/GiphySearch' className='bg-gradient-to-r from-teal-400 to-cyan-500 text-white px-4 py-2 rounded-full'>GiphySearch</a></div>
               <div class="text-gray-700 p-3 leading-7 text-justify max-w-lg mx-auto">
                 <ul class="list-disc">
                   <li>
@@ -185,7 +185,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className='text-5xl py-3 flex justify-center text-teal-600'><a href="https://simplegiphy.netlify.app/" target="_blank"><SiNetlify /></a></div>
+              <div className='text-5xl py-3 flex justify-center text-teal-600'><a href="https://simplegiphy.netlify.app/"><SiNetlify /></a></div>
             </div>
             <div class="px-6 pt-4 pb-2 text-center max-w-lg mx-auto">
               <span class="inline-block bg-teal-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">Html</span>
