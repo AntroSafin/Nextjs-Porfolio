@@ -71,7 +71,7 @@ export default function Home() {
             <h3 className='text-4xl font-medium dark:text-white'>Projects</h3>
           </div>
 
-          <div class="font-serif p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10">
+          <div class="font-burtons p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2 gap-10">
           {/* Card 1 */}
           <div class="rounded-xl overflow-hidden shadow-xl shadow-teal-600/60 dark:bg-slate-100">
             <picture>
